@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="GitHub.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-sm-7">
+                <div class="home">
+                    <h2 class="heading">Github Public Information</h2>
+                    <div id="userInfo" class="text-start mt-3">
+                        <!-- user info -->
+                        <img src="" alt="Avatar" id="avatar" class="rounded-circle mx-auto d-block" style="width: 120px;">
+                        <div class="info">
+                            <h3 class="mt-3" id="username">Username: </h3>
+                            <p id="name">Name: </p>
+                            <p id="bio">Profile Bio: </p>
+                            <p id="publicRepos">Public Repositories: </p>
+                            <div class="follow">
+                                <p id="followers">Followers: </p>
+                                <p id="following">Following: </p>
+                            </div>
+                            <p id="createdAt">Profile Created At: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Retrieve from localstorage
+            const userData = JSON.parse(localStorage.getItem("userData"));
+
+            // Display user info
+            const userInfoDiv = document.getElementById("userInfo");
+
+            if (userInfoDiv && userData) {
+                document.getElementById("avatar").src = userData.avatar_url;
+                document.getElementById("username").innerHTML = `Username: ${userData.login}`;
+                document.getElementById("name").innerHTML = `Name: ${userData.name || "N/A"}`;
+                document.getElementById("publicRepos").innerHTML = `Public Repositories: ${userData.public_repos}`;
+                document.getElementById("followers").innerHTML = `Followers: ${userData.followers}`;
+                document.getElementById("following").innerHTML = `Following: ${userData.following}`;
+                document.getElementById("bio").innerHTML = `Profile Bio: ${userData.bio}`;
+                document.getElementById("createdAt").innerHTML = `Profile Created At: ${new Date(userData.created_at).toISOString().split("T")[0]}`;
+            }
+        });  
+    </script>
+</body>
+
+</html>
