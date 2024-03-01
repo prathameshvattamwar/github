@@ -18,8 +18,8 @@
 
 <h2>Project outputs</h2>
 <h5>Desktop View</h5>
-<img src="https://i.imgur.com/Or7N9E6.png" alt="Output img" style="width:400px;"/>
-<img src="https://i.imgur.com/HOByweO.png"  alt="user details" style="width:400px;"/>
+<img src="https://i.imgur.com/Or7N9E6.png" alt="Output img" style="width:700px;"/>
+<img src="https://i.imgur.com/HOByweO.png"  alt="user details" style="width:700px;"/>
 
 <h5>Mobile View</h5>
 <img src="https://i.imgur.com/BhNzXW0.jpg" alt="Output img" style="width:200px;"/>
