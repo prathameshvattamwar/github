@@ -25,4 +25,4 @@
 <img src="https://i.imgur.com/BhNzXW0.jpg" alt="Output img" style="width:200px;"/>
 <img src="https://i.imgur.com/lUlYoJR.jpg"  alt="user details" style="width:300px;"/>
 
-<p>Follow me for more projects - <a href="https://github.com/prathameshvattamwar"</p>
+<p>Follow me for more projects - <a href="https://github.com/prathameshvattamwar">https://prathameshvattamwar.github.io</a></p>
