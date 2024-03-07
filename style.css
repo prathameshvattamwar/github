@@ -9,6 +9,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #108277;
+  user-select: none;
 }
 
 .container{
